@@ -1,0 +1,41 @@
+###consulta
+POST http://localhost:3000/auth
+Content-Type: application/json
+
+{
+  "name": "valeria",
+  "email": "prueba@gmail.com",
+  "password": "123456"
+}
+
+
+###login
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "name": "natalia",
+  "email": "prueba3@gmail.com",
+  "password": "123456"
+}
+
+
+
+###Register
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+  "name": "maria",
+  "email": "prueba2@gmail.com",
+  "password": "123456"
+} 
+
+###Traer usuarios
+GET http://localhost:3000/auth
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZGYzZGNhNWRmNmM1YWRjYzAxZjM1MiIsImlhdCI6MTcwOTE1NDczNywiZXhwIjoxNzA5MTc2MzM3fQ.EpB2dOlIlNQs0mPKvvSu864ONR_vSi2_10-7jvMcUYM
+
+
+###Traer usuarios
+GET http://localhost:3000/auth/check-token
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZGYzZGNhNWRmNmM1YWRjYzAxZjM1MiIsImlhdCI6MTcwOTE1NjQyOCwiZXhwIjoxNzA5MTc4MDI4fQ.TMiyQiLiQjyuTxnRnj1xUaWj1WDpIS098KWREk4BXkg
